@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Gallery Cafe</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="The Gallery Cafe" name="The Gallery Cafe">
+        <meta content="Imash Dilharsha" name="The Gallery Cafe">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Gallery <span>Cafe</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="team.html" class="nav-item nav-link">Chef</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="promos.html" class="nav-item nav-link">Promos</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="parking.html" class="nav-item nav-link">Parking</a>
+                        <a href="loginform.html" class="nav-item nav-link">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/carousel-1.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Savor The <span>Flavors</span> Of Perfection</h1>
+                            <p>
+                                Enjoy our tender chicken, seasoned with a blend of herbs and spices, a true culinary delight.
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="#mainmenu">View Menu</a>
+                                <a class="btn custom-btn" href="#bookingform">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/carousel-2.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Juicy <span>Bliss</span> In Every Bite</h1>
+                            <p>
+                                Experience the ultimate burger, packed with flavor and grilled to perfection just for you.
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="#mainmenu">View Menu</a>
+                                <a class="btn custom-btn" href="#bookingform">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/carousel-3.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>A Taste Of <span>Italian Heaven</span></h1>
+                            <p>
+                                Delight in our rich, savory spaghetti, made with love and the finest ingredients.
+                            </p>
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="#mainmenu">View Menu</a>
+                                <a class="btn custom-btn" href="#bookingform">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        
+        
+        <!-- Booking Start -->
+        <div class="booking">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="booking-content">
+                            <div class="section-header">
+                                <p>Book A Table</p>
+                                <h2>Book Your Table For Day Outs & Happy Hours</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Ensure your spot at The Gallery Café by booking your table in advance. Enjoy a hassle-free dining experience with our simple and quick reservation system. Whether it's a special occasion or a casual meal, secure your table with just a few clicks and savor the best of Colombo's culinary delights.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" id="bookingform">
+                        <div class="booking-form">
+                            <form action="reservation.php" method="post">
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Name" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="mobile" placeholder="Mobile" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group date" id="date" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" name="date" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="control-group">
+                                    <div class="input-group time" id="time" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" name="time" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <select class="custom-select form-control" name="guests">
+                                            <option selected>Guest</option>
+                                            <option value="1">1 Guest</option>
+                                            <option value="2">2 Guest</option>
+                                            <option value="3">3 Guest</option>
+                                            <option value="4">4 Guest</option>
+                                            <option value="5">5 Guest</option>
+                                            <option value="6">6 Guest</option>
+                                            <option value="7">7 Guest</option>
+                                            <option value="8">8 Guest</option>
+                                            <option value="9">9 Guest</option>
+                                            <option value="10">10 Guest</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn custom-btn" type="submit">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking End -->
+        
+        <!--Javascript to reformat date before submission-->
+        <script>
+            document.querySelector("form").addEventListener("submit", function(event) {
+                var dateInput = document.querySelector("input[name='date']");
+                var dateValue = new Date(dateInput.value);
+                var formattedDate = dateValue.toISOString().split('T')[0]; // Format as YYYY-MM-DD
+                dateInput.value = formattedDate;
+            });
+        </script>
+        
+
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="img/about2.jpg" alt="Image">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header">
+                                <p>About Us</p>
+                                <h2>Cooking Since 2023</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Welcome to The Gallery Café, a culinary gem nestled in the heart of Colombo. Established with a passion for food and a dedication to exceptional service, we offer an unforgettable dining experience. Our chefs craft each dish using the freshest ingredients, blending traditional and contemporary techniques. From the rich flavors of Sri Lankan cuisine to the tastes of Italian and Chinese dishes, our menu caters to diverse palates. Whether you're in the mood for a hearty meal or a light bite, you'll find something to delight your taste buds.
+                                </p>
+                            
+                                <a class="btn custom-btn" href="#bookingform">Book A Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        <!-- Video Modal Start-->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Video Modal End -->
+        
+        
+        <!-- Feature Start -->
+        <div class="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="section-header">
+                            <p>Why Choose Us</p>
+                            <h2>Our Key Features</h2>
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-img">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="img/feature-1.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-2.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-3.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-4.jpg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                At The Gallery Café, we offer a wide range of delicious options, including gourmet burgers, refreshing beverages, and authentic Italian dishes. Enjoy a diverse culinary experience that caters to all tastes and preferences. 
+                            </p>
+                            <a class="btn custom-btn" href="">Book A Table</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-cooking"></i>
+                                    <h3>World’s best Chef</h3>
+                                    <p>
+                                        Our world-class chef crafts exquisite dishes, ensuring an unforgettable culinary experience every time.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-vegetable"></i>
+                                    <h3>Natural ingredients</h3>
+                                    <p>
+                                        Our dishes are made from natural ingredients, providing wholesome and nutritious meals for a healthier lifestyle.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-medal"></i>
+                                    <h3>Best quality products</h3>
+                                    <p>
+                                        We use only the finest quality products, guaranteeing exceptional taste and freshness in every bite.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-meat"></i>
+                                    <h3>Fresh vegetables & Meet</h3>
+                                    <p>
+                                        Savor the flavor of fresh vegetables and meat, handpicked daily for the ultimate dining experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-courier"></i>
+                                    <h3>Fastest door delivery</h3>
+                                    <p>
+                                        Enjoy our delicious food with the fastest door delivery service, ensuring hot and fresh meals at your doorstep.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-fruits-and-vegetables"></i>
+                                    <h3>Ground beef & Low fat</h3>
+                                    <p>
+                                        Our ground beef is expertly prepared, offering delicious, low-fat options without compromising on taste.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+        
+        
+        <!-- Food Start -->
+        <div class="food">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i class="flaticon-meat"></i>
+                            <h2>Appetizers and Starters</h2>
+                            <p>
+                                Kick off your meal with our delightful appetizers and starters, featuring fresh salads, savory soups, and tempting finger foods. 
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i class="flaticon-fast-food"></i>
+                            <h2>Main <br>Courses</h2>
+                            <p>
+                                Indulge in our diverse main courses, including gourmet burgers, succulent steaks, delicious pastas, and a variety of hearty entrées. 
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            <i class="flaticon-cocktail"></i>
+                            <h2>Desserts and Beverages</h2>
+                            <p>
+                                End your meal on a sweet note with our delectable desserts, and enjoy our refreshing beverages, from specialty drinks to classic favorites. 
+                            </p>
+                            <a href="">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Food End -->
+        
+        
+        <!-- Menu Start -->
+        <div class="menu" id="mainmenu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>BROWSE OUR</p>
+                    <h2>Delicious Food Menu</h2>
+                </div>
+                <div class="menu-tab">
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#srilankan">Sri Lankan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#italian">Italian</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#chinese">Chinese</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#beverages">Beverages</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="srilankan" class="container tab-pane active">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-rice.png" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Rice and Curry</span> <strong>Rs.800</strong></h3>
+                                            <p>Traditional rice served with a variety of spicy curries.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-hoppers.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Hoppers</span> <strong>Rs.100</strong></h3>
+                                            <p>Delight in crispy hoppers with coconut sambal and dhal curry.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-kottu.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Chicken Kottu</span> <strong>Rs.850</strong></h3>
+                                            <p>Stir-fried chopped roti with vegetables, meat, and spices.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-lamprais.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Lamprais</span> <strong>Rs.900</strong></h3>
+                                            <p>Savor this Dutch Burgher-influenced rice dish, wrapped in banana leaves.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-stringh.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>String Hoppers</span> <strong>Rs.200</strong></h3>
+                                            <p>Enjoy this string hoppers with a side of onion and chili mix.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/menu-srilankan-img.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="italian" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-pizzam.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Margherita Pizza</span> <strong>Rs.1800</strong></h3>
+                                            <p>Classic pizza with fresh tomatoes, mozzarella, and basil.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-spag.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Spaghetti Carbonara</span> <strong>Rs.1900</strong></h3>
+                                            <p>Creamy pasta with pancetta, egg, and Parmesan cheese.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-lasagna.png" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Lasagna</span> <strong>Rs.2000</strong></h3>
+                                            <p>Layers of pasta with rich meat sauce and melted cheese.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-risotto.png" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Risotto al Funghi</span> <strong>Rs.1400</strong></h3>
+                                            <p>Creamy risotto with mushrooms and Parmesan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/menu-italian-img.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chinese" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-chickens.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Sweet and Sour Chicken</span> <strong>Rs.1500</strong></h3>
+                                            <p>Crispy chicken in a tangy sweet and sour sauce.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-prawns.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Kung Pao Prawns</span> <strong>Rs.1800</strong></h3>
+                                            <p>Spicy stir-fried prawns with peanuts and vegetables.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-frice.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Fried Rice</span> <strong>Rs.950</strong></h3>
+                                            <p>Classic Chinese-style fried rice with vegetables and your choice of meat.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-spring.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Spring Rolls</span> <strong>Rs.750</strong></h3><br>
+                                            <p>Crispy rolls filled with vegetables and meat. </p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-dimsum.png" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Dim Sum Platter</span> <strong>Rs.1400</strong></h3>
+                                            <p>An assortment of steamed and fried dumplings.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/menu-chinese-img.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="beverages" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-lime.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Fresh Lime Juice</span> <strong>Rs.450</strong></h3>
+                                            <p>Refreshing lime juice with a hint of mint.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-mango.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Mango Smoothie</span> <strong>Rs.450</strong></h3><br>
+                                            <p>Creamy and sweet mango blend.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-ceylontea.png" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Ceylon Tea</span> <strong>Rs.300</strong></h3><br>
+                                            <p>Classic Sri Lankan tea, hot or iced.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="img/menu-espresso.png" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Espresso</span> <strong>Rs.450</strong></h3><br>
+                                            <p>Strong and bold shot of espresso.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/menu-beverage-img.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+        <!-- Team Start -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Our Team</p>
+                    <h2>Our Master Chef</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Publis Silva</h2>
+                                <p>CEO, Co Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Charith Perera</h2>
+                                <p>Master Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Dhammika Jayaweera</h2>
+                                <p>Master Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Image">
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h2>Jayawardana Rajapaksha</h2>
+                                <p>Master Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+        
+        <!-- Testimonial Start -->
+        <div class="testimonial">
+            <div class="container">
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Image">
+                        </div>
+                        <p>
+                            The Gallery Café has a wonderful ambiance, and the food is simply delicious! Foods are authentic. Highly recommended!
+                        </p>
+                        <h2>Bhanuka Harischandra</h2>
+                        <h3>SURGE CEO</h3>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Image">
+                        </div>
+                        <p>
+                            I absolutely love the variety on the menu. The Italian pasta dishes are my favorite. The service is excellent, and the staff is very friendly.
+                        </p>
+                        <h2>Ashen Senarathne</h2>
+                        <h3>YouTuber</h3>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Image">
+                        </div>
+                        <p>
+                            A perfect place for a family outing. The Chinese food here is top-notch, and the kids love the beverages. Great place to dine!
+                        </p>
+                        <h2>Dilith Jayaweera</h2>
+                        <h3>Politician</h3>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-4.jpg" alt="Image">
+                        </div>
+                        <p>
+                            The Gallery Café never disappoints. The chicken plate was cooked to perfection, and the overall experience was fantastic. Will be back soon!
+                        </p>
+                        <h2>Dilshan Abeygunawardna</h2>
+                        <h3>Entrepreneur</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+        
+        <!-- Contact Start -->
+        <div class="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Contact Us</p>
+                    <h2>Contact For Any Query</h2>
+                </div>
+                <div class="row align-items-center contact-information">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Address</h3>
+                                <p>647 De S Kularatne Mawatha, Colombo , SRI LANKA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Call Us</h3>
+                                <p>011 846 2554</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Us</h3>
+                                <p>info@gallerycafe.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-share"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Follow Us</h3>
+                                <div class="contact-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row contact-form">
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63372.5886600137!2d79.80025644863278!3d6.916075400000021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2590c1e63a2b7%3A0x3a9ea8933283c010!2sCaf%C3%A9%20Konditorei!5e0!3m2!1sen!2slk!4v1721227925103!5m2!1sen!2slk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn custom-btn" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Blog Start -->
+        <div class="blog">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Food Blog</p>
+                    <h2>Latest From Food Blog</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/kottu.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-content">
+                                <h2 class="blog-title">Chicken Kottu</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>Admin</p>
+                                    <p><i class="far fa-list-alt"></i>Food</p>
+                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-comments"></i>10</p>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        Kottu, is made up of paratha or wheat flour/"Godamba"roti, which is cut into small pieces or ribbons. Then on a heated iron sheet or griddle, vegetables and onions are fried. Eggs, cooked meat, or fish are added to fried vegetables and heated for a few minutes. Finally, the pieces of cut paratha are added.
+                                    </p>
+                                    <a class="btn custom-btn" href="blog.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/hoppers.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-content">
+                                <h2 class="blog-title">Hoppers</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>Admin</p>
+                                    <p><i class="far fa-list-alt"></i>Food</p>
+                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-comments"></i>10</p>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        In Sri Lanka, hoppers are thin, bowl-shaped pancakes named for the pan that gives them their form. Of course, these crispy basins cry out for some kind of filling. Just as the batter is starting to cook, chefs break a whole egg over it and cover the pan.
+                                    </p>
+                                    <a class="btn custom-btn" href="blog.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Our Address</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>647 De S Kularatne Mawatha, Colombo , SRI LANKA</p>
+                                    <p><i class="fa fa-phone-alt"></i>011 846 2554</p>
+                                    <p><i class="fa fa-envelope"></i>info@gallerycafe.com</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>Quick Links</h2>
+                                    <a href="">Terms of use</a>
+                                    <a href="">Privacy policy</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Help</a>
+                                    <a href="">FQAs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Send your email to get the daily news of The Gallery Cafe!
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Email goes here">
+                                <button class="btn custom-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; <a href="#">The Gallery Cafe</a> All Right Reserved.</p>
+                    <p>Designed By <a href="">Imash Dilharsha</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
